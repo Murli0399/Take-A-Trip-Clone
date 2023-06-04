@@ -95,32 +95,28 @@ Start the server
 ![image](https://drive.google.com/uc?export=view&id=1QXdTwlOVuxz7sd72FlGUSghR8NMeEkM1)
 
 
-##Booking Page
+## Booking Page
 
 ![image](https://drive.google.com/uc?export=view&id=1t9viNPDOWB1AnssQaxvIVoSughDD0Y2h)
 
 
-##Payment Page
+## Payment Page
 
 ![image](https://drive.google.com/uc?export=view&id=1cYK5spLx1zL-jitKwI-p7ftXGWDqu63h)
 
 
-##Admin Site
+## Admin Site
 
 ![image](https://drive.google.com/uc?export=view&id=1vTKgKJ5HIVUhYReB2QyWM5Nzg5Y141GX)
 
-##Admin Site(Flight)
+## Admin Site(Flight)
 
 ![image](https://drive.google.com/uc?export=view&id=1rXvvNmKxOQx79fU55vIj1dv854byACVs)
 
 
-##Admin Site(Hotel)
+## Admin Site(Hotel)
 
 ![image](https://drive.google.com/uc?export=view&id=1Ek5uuromp3QiE0rfxHeFzkINpXze4Oz9)
-
-
-
-
 
 - GITHUB - https://github.com/atir09/purple-crook-1402
 - NETLIFY - https://take-a-trip-atir-clone.netlify.app/
