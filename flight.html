@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flights-Make-my-trip</title>
+    <link rel="stylesheet" href="style\flight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Nav 1  (main-with flights-hotels-trains,etc)-->
+    <nav class="nav1">
+
+    </nav>
+    <!-- .......................................................................................................................... -->
+
+    <!-- NAv 2(sticky nav bar for chosing destination and date of flight) -->
+    <nav class="nav2">
+        <button style="width: 8%;">
+            <label for="trip-type">Trip Type<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="trip-type">
+                <option value="round-trip">Round Trip</option>
+                <option value="one-way">One Way</option>
+                
+            </select>
+        </button>
+        <button class="flight1">
+            <label id="span1" for="From">FROM</label>
+
+            <input type="text" id="input1" placeholder="From">
+            <div id="down_bar" style="display: none;">
+               <p class="suggestion_name">Delhi</p>
+               <!-- <p class="suggestion_name">input2</p>
+               <p class="suggestion_name">GINH</p> -->
+               <p class="suggestion_name">Pune</p>
+               <p class="suggestion_name">Goa</p>
+            </div>
+            <h1 id="fromh1">Delhi</h1>
+
+        </button>
+
+        <button class="flight2">
+            <label id="span3" for="To">TO</label>
+
+            <input type="text" id="input2" placeholder="To">
+            <div id="down_bar1">
+                <p class="suggestion_name">Banglore</p>
+                <p class="suggestion_name">Mumbai</p>
+                <p class="suggestion_name">Pune</p>
+            </div>
+            <h1 id="toh1">Bengaluru</h1>
+        </button>
+
+        <button>
+            <label for="depart-date">DEPART</label>
+            <input id="calendor" type="date" >
+            <div style="color: white;"><span id="for_day"></span><span id="for_month"> </span><span id="for_year"></span></h1>
+                <span id="var"></span></div>
+        </button>
+
+        <button>
+            <label for="return-date">RETURN</label>
+            <input id="calendor-return" type="date" >
+            <div style="color: white;"><span id="for_day_return"></span><span id="for_month_return"> </span><span id="for_year_return"></span></h1>
+                <span id="var_return"></span></div>
+        </button>
+        <button>
+            <label for="passenger">PASSENGERS</label>
+            <span style="color: white;"> <span id="passengerNumber">1</span> Adult,Economy</span>
+            <!-- <select name="passenger" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+            </select> -->
+            <select name="passenger" id="select_number" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+        </button>
+        <button id="search"><b>SEARCH</b></button>
+
+    </nav>
+    <!-- ............................................................................................................. -->
+    <!-- ...............................................Main Section.............................................................. -->
+    <div id="main">
+
+        <!-- ...................Filter Scetion ..................... -->
+        <div class="filter-sec">
+
+            <div id="heading-filter">Select Filters</div>
+
+            <!-- ...........FIlter for price(slider) -->
+            <div class="priceslider">
+                <h3>One Way Price</h3>
+                <div class="range">
+                    <div class="sliderValue">
+                        <Label for="slide-value">Price Under:</Label>
+                        <span id="slide-value">Rs.10000</span>
+                    </div>
+                    <div class="field">
+                        <div class="value left">
+                            5000</div>
+                        <input type="range" min="5000" max="12000" value="12000" steps="1">
+                        <div class="value right">
+                            12000</div>
+                    </div>
+                    <button id="filterbyPriceBtn">Apply</button>
+                </div>
+            </div>
+
+            <!-- .................Filter for Airline........................... -->
+            <div class="fairline">
+                <span class="small">Airlines</span>
+                <div style="display: flex"><input type="checkbox" name="Airlines" id="Airlines" value="Air India" checked>
+                    <p>Air India</p>
+                </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Air Asia" checked >
+                    <p>Air Asia</p>
+                </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Akasa" checked>
+                    <p>Akasa Air</p>
+                </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="Go First" checked>
+                    <p>Go First</p>
+                </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="IndiGo" checked>
+                    <p>IndiGo</p>
+                </div>
+                <div style="display: flex;"><input type="checkbox" name="Airlines" id="Airlines" value="SpiceJet" checked>
+                    <p>SpiceJet</p>
+                </div>
+                
+            </div>
+            <button id="filterbyAirlineBtn">Apply</button>
+        </div>
+
+
+        <!-- div for right-side container for displaying all flights data -->
+        <div id="Right-side-container">
+            <!-- displaying oneward fligths -->
+
+            <div id="one-ward-fligts">
+                <div id="one-ward-flight-info">
+                    <div>
+                        <p style="font-size: 16px;">
+                            <b id="one-ward-flight-name">New Delhi → Bengaluru</b>
+                            <span id="one-ward-date">Wed, 18 Jan</span>
+                        </p>
+                    </div>
+                    <div class="sort-buttons">
+                        <div>
+                            <span id="one-ward-departure-sort" data-type="normal">Departure</span>
+                            <span class="left-sort-button-arrow" id="one-departure-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-duration-sort" data-type="normal">Duration</span>
+                            <span class="left-sort-button-arrow" id="one-duration-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-arrival-sort" data-type="normal">Arrival</span>
+                            <span class="left-sort-button-arrow" id="one-arrival-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="one-ward-price-sort" data-type="normal">Price</span>
+                            <span class="left-sort-button-arrow" id="one-price-sort-arrow">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List of Cards -->
+                <div id="one-ward-flight-list-cards">
+                    <div class="one-ward-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10h 55m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-oneway-flight" value="10" onclick="onSelectOne(this.value)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- displaying return fligths -->
+            <div id="return-fligts">
+                <div id="return-flight-info">
+                    <div>
+                        <p style="font-size: 16px;">
+                            <b id="return-flight-name">Bengaluru → New Delhi</b>
+                            <span id="return-date">Thurs, 19 Jan</span>
+                        </p>
+                    </div>
+                    <div class="sort-buttons">
+                        <div>
+                            <span id="return-departure-sort" data-type="normal">Departure</span>
+                            <span class="return-sort-button-arrow" id="departure-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="return-duration-sort" data-type="normal">Duration</span>
+                            <span class="return-sort-button-arrow" id="duration-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="return-arrival-sort" data-type="normal">Arrival</span>
+                            <span class="return-sort-button-arrow" id="arrival-sort-arrow">&#8593;</span>
+                        </div>
+                        <div>
+                            <span id="return-price-sort" data-type="normal">Price</span>
+                            <span class="return-sort-button-arrow" id="price-sort-arrow">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- List of Cards -->
+                <div id="return-flight-list-cards">
+
+                    <div class="return-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10 h 55 m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-return-flight" value="1" onclick="onSelectReturn(this.value)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="return-card">
+                        <div class="flight-name-logo flex">
+                            <img class="flight-img-logo"
+                                src="https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/I5.png?v=14" alt="">
+                            <p>Air Asia</p>
+                        </div>
+                        <div class="flight-details flex">
+                            <div class="flex-col">
+                                <span class="flight-time">13:15</span>
+                                <span class="card-place">New Delhi</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="duration">10 h 55 m</span>
+                                <p style="border: 2px solid rgb(81, 226, 194); margin: 8px 0px; width: 80%;"></p>
+                                <span class="no-stop">Non Stop</span>
+                            </div>
+                            <div class="flex-col">
+                                <span class="flight-time">00:15</span>
+                                <span class="card-place">Bengaluru</span>
+                            </div>
+                            <div class="">
+                                <label for="select-flight" class="price">Rs 5,000</label>
+                                <input type="radio" class="select-flight" name="selected-return-flight"  value="2" onclick="onSelectReturn(this.value)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="selected-flight">
+        <div>
+            <div class="flex" style="align-items:center;">
+                <p>Departure</p>
+                <span style="margin: 0px 7px;">&#8226</span>
+                <p id="selected-departure-flight-name"></p>
+            </div>
+            <div class="flex">
+                <img class="flight-img-logo" id="selected-departure-flight-logo"
+                    src="" alt="">
+                <div>
+                    <span id="selected-on-ward-time-1"></span>→<span id="selected-on-ward-time-2"></span>
+                    <p class="small-blue">Flight Details</p>
+                </div>
+                <div id="selected-departure-price"></div>
+            </div>
+        </div>
+        <hr>
+        <div style="justify-content: left;" id="return-selected-box" >
+            <div class="flex" style="align-items:center;">
+                <p>Return</p>
+                <span style="margin: 0px 7px;">&#8226</span>
+                <p id="selected-return-flight-name"></p>
+            </div>
+            <div class="flex">
+                <img class="flight-img-logo" id="selected-return-flight-logo"
+                    src="" alt="">
+                <div>
+                    <span id="selected-return-time-1"></span>→<span id="selected-return-time-2"></span>
+                    <p class="small-blue">Flight Details</p>
+                </div>
+                <div id="selected-return-price"></div>
+            </div>
+        </div>
+        <hr id="rsb-hr">
+        <div class="flex" id="total-price-div">
+            <div>
+                <p id="total-price"></p>
+                <span class="small-blue">Fare Details</span>
+            </div>
+            <div>
+                <a href="flightpayment.html"><button id="bookNowBtn">Book Now</button><br></a>
+                <a href="flightpayment.html"><button id="lockPriceBtn">Lock Price</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="scripts\flight.js"></script>
+
+</html>

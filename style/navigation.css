@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins&family=Titillium+Web&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navigation {
+    position: fixed;
+    width: 22%;
+    height: 100%;
+    background: linear-gradient(#061424, #17457c);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation .logoPNG{
+    padding: 20px 20px 15px 20px;
+    width: 100%;
+}
+.navigation .logoPNG img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+/* .navigation h2 {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+} */
+
+.flex {
+    display: flex;
+}
+
+.navigation .icon {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.navigation .iname {
+    line-height: 61px;
+    color: white;
+    font-size: 16px;
+    /* padding: 10px 0; */
+}
+
+.navigation .iname p:hover {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+/* ---------------------------- */
+
+
+.popup {
+    padding: 20px 0;
+    width: 25%;
+    /* border: 1px solid red; */
+    float: right;
+}
+
+
+.popup .boxpopup {
+    visibility: hidden;
+    width: 260px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px 25px 20px;
+    position: absolute;
+    cursor: default;
+}
+
+.popup:hover .boxpopup {
+    visibility: visible;
+    transition: 0.8s;
+}
+
+.popup .boxpopup p {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.popup .boxpopup .logincss:hover {
+    transition: 0.5s;
+    background-color: #225692;
+}
+
+.popup .boxpopup .logincss {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #143d6d;
+    color: white;
+}

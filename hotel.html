@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./style/hotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+    <nav class="nav1">
+        <img src="./New folder/Take-a-trip-logo-final.jpg" alt="" width="130px" height="45px" style="margin-right: 30px;margin-top: 10px;">
+        <div>
+            <button>
+            <img src="./New folder/flight.png" alt="">
+            <p>Flights</p>
+        </button>
+        <button>
+            <img src="./New folder/hotel.png" alt="" >
+            <p style="width:50px;border-radius:20px;background-color:#008cff;font-size:12px;color:white;padding: 2px 2px;">Hotels</p>
+        </button>
+        <button>
+            <img src="./New folder/homestay.png" alt="" style="width: 50px;">
+            <p>Homestays</p>
+        </button>
+        <button>
+            <img src="./New folder/hp.png" alt="" style="width: 50px;">
+            <p>Holiday Packages</p>
+        </button>
+        <button>
+            <img src="./New folder/train.png" alt="" style="width: 30px;">
+            <p>Trains</p>
+        </button>
+        <button>
+            <img src="./New folder/bus.png" alt="" style="width: 30px;">
+            <p>Buses</p>
+        </button>
+        <button>
+            <img src="./New folder/cab.png" alt="" style="width: 30px;">
+            <p>Cabs</p>
+        </button>
+        <button>
+            <img src="./New folder/forex.png" alt="">
+            <p>Forex</p>
+        </button>
+        <button>
+            <img src="./New folder/more.png" alt="">
+            <p>More<span class="hsw_inputBoxArrow" style="font-size:12px;color: #4A4A4A;"></span></p>
+        </button>
+        </div>
+        
+        
+    </nav>
+    <!-- ---------------------------------------------------------navbar1------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+    <nav class="nav2">
+        <button>
+            <label for="city">CITY, AREA OR PROPERTY<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="city">
+                <optgroup label="Popular Cities" style="font-size: 15px;color: #4a4a4a;">
+                <option  value="Mumbai" >Mumbai</option>
+                <option  value="Delhi" >Delhi</option>
+                <option  value="Bengaluru">Bengaluru</option>
+                <option  value="Goa">Goa</option>
+                <option  value="Chennai">Chennai</option>
+                <option  value="Jaipur">Jaipur</option>
+                <option  value="Hyderabad">Hyderabad</option>
+                <option  value="Singapore">Singapore</option>
+                <option  value="Dubai">Dubai</option>
+                <option  value="Bangkok">Bangkok</option>
+                </optgroup>
+                
+            </select>
+        </button>
+        <button >
+            <label for="indate">CHECK-IN<span class="hsw_inputBoxArrow" ></span></label>
+            <div id="ci"></div>
+        </button>
+        <button>
+            <label for="outdate">CHECK-OUT<span class="hsw_inputBoxArrow"></span></label>
+            <div id="co"></div>
+        </button>
+        <button>
+            <label for="room">ROOMS & GUESTS<span class="hsw_inputBoxArrow"></span></label>
+            <select name="" id="">
+                <option>1 Room, 2 Adults</option>
+            </select>
+        </button>
+        <button id="search"><b>SEARCH</b></button>
+    </nav>
+    <!-- ---------------------------------------------------------navbar2------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------navbar3------------------------------------------------------------------------------- -->
+    <nav class="nav3">
+        <div>
+            <a href="">Home</a>
+            &gt
+            <p id="nav3p"></p>
+        </div>
+        <div id="head">
+            <p id="nav4p"><script>
+            </script></p>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------------------navbar3------------------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------navbar4------------------------------------------------------------------------------- -->
+    <nav class="nav4">
+        <div class="div1">
+            <select name="" id="">
+                <option value="" selected class="selected">Select Trip Type</option>
+                <option value="Business">Business</option>
+                <option value="Family">Family</option>
+                <option value="Romantic">Romantic</option>
+            </select>
+            <label for="" style="font-size: 14px;font-weight: 600;">Sort by:</label>
+            <select name="" id="select1">
+                <option value="Popularity">Popularity</option>
+                <option value="Price-Low to High">Price-Low to High</option>
+                <option value="Price-High to Low">Price-High to Low</option>
+            </select>
+            <p style="font-size: 14px;color: #4a4a4a;" id="body2p"></p>
+        </div>
+        <div class="div2">
+            <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/sprite/view-map-new.png" alt="" width="100px" style="margin-bottom: 10px;">
+            <div style="display: flex;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIipC-vMEFEecKPfRr66bvMgAF7KPhvg8PA&usqp=CAU" alt="" id="s1">
+                <input type="search" name="" id="search1" placeholder="Search location or property">
+            </div>
+            
+        </div>
+    </nav>
+    <!---------------------------------------------------------------navbar4-------------------------------------------------------------------------------->
+    <div class="mainbody">
+        <!-- ---------------------------------------------------------filters---------------------------------------------------------------------------- -->
+        <div class="filters">
+            <span>Selete Filters</span>
+            <div class="fprice">
+                <small>Price (per night)</small>
+                <div style="display: flex;"><input type="checkbox" name="price" id="0-3000" value="0-3000"><p>₹ 0 - ₹ 3000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="3000-5000" value="3000-5000"><p>₹ 3000 - ₹ 5000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="5500-9000" value="5500-9000"><p>₹ 5500 - ₹ 9000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="9000-15000" value="9000-15000"><p>₹ 9000 - ₹ 15000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="15000-30000" value="15000-30000"><p>₹ 15000 - ₹ 30000</p></div>
+                <div style="display: flex;"><input type="checkbox" name="price" id="3000+" value="3000+"><p>₹ 30000 +</p></div>
+                <p style="font-size: 15px;">Your Budget</p>
+                <div id="range">
+                    <input type="number" name="" id="lower" placeholder="Min">
+
+                    <p style="margin-top: 6px;">to</p>
+                    <input type="number" name="" id="upper" placeholder="Max">
+                    <button id="filter-btn">→</button>
+                </div>
+            </div>
+            <div class="frating">
+                <small>User Rating</small>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="excellent" value="4.5"><p>4.5 & above (Excellent)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="verygood" value="4"><p>4 & above (Very Good)</p></div>
+                <div style="display: flex;"><input type="checkbox" name="rate" id="good" value="3"><p>3 & above (Good)</p></div>
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------filters---------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
+        <div class="body">
+            <p id="body1p"></p>
+            <div id="hotel">
+                
+            </div>
+        </div>
+        <!-- ---------------------------------------------------------main body-------------------------------------------------------------------------- -->
+    </div>
+
+</body>
+</html>
+<script src="./scripts/hotel.js"></script>
