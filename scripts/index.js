@@ -317,10 +317,10 @@ search_button.addEventListener("click",function(){
 
 let hotel=document.querySelector("#hotel");
 hotel.addEventListener("click",function(){
-    window.location.assign("hotel.html")
+    window.location.assign("home.html")
 })
 
 let second_hotel_btn=document.querySelector("#second_hotel_btn");
 second_hotel_btn.addEventListener("click",function(){
-    window.location.assign("hotel.html")
+    window.location.assign("hotelhome.html")
 })

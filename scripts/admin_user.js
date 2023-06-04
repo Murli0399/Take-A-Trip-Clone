@@ -20,7 +20,7 @@ function fetchUserServer() {
 let sortName = document.getElementById("sortName");
 sortName.addEventListener("change", (e) => {
   if (e.target.value == 'l2h') {
-    fetch(`${baseServerURL}/users?_sort=name&_order=asc`)
+    fetch(`${baseServerURL}/users?_sort=user_name&_order=asc`)
       .then(res => {
         return res.json();
       })
@@ -29,7 +29,7 @@ sortName.addEventListener("change", (e) => {
       })
   }
   else if (e.target.value == 'h2l') {
-    fetch(`${baseServerURL}/users?_sort=name&_order=desc`)
+    fetch(`${baseServerURL}/users?_sort=user_name&_order=desc`)
       .then(res => {
         return res.json();
       })
@@ -48,7 +48,7 @@ let searchUser = document.getElementById("searchByName");
 searchUser.addEventListener("input", (e) => {
   let input = e.target.value.toLowerCase();
   let arr = userArray.filter((el, i) => {
-    if ((el.name.toLowerCase().includes(input)) || (el.email.toLowerCase().includes(input))) {
+    if ((el.user_name.toLowerCase().includes(input)) || (el.email.toLowerCase().includes(input))) {
       return true;
     }
     return false;
@@ -72,7 +72,7 @@ function showUserData(data) {
     box1.setAttribute("class", "card-head-1");
     let userName = document.createElement("p");
     userName.setAttribute("class", "thoda-big");
-    userName.innerText = element.name;
+    userName.innerText = element.user_name;
     box1.append(userName);
 
 
@@ -87,7 +87,7 @@ function showUserData(data) {
     box3.setAttribute("class", "card-head-3");
     let mobile = document.createElement("p");
     mobile.setAttribute("class", "thoda-big");
-    mobile.innerText = element.number;
+    mobile.innerText = element.mobile;
 
     box3.append(mobile);
 
