@@ -44,7 +44,7 @@ Start the server
 
 - Login and Sign up using OTP
 - Search engine to search Flights
-- Sorting of flights (Price,Arrival,Duration,Departure)
+- Sorting of flights (Price, Arrival, Duration, Departure)
 - Filter Flights with respect to Airlines
 -  Search engine to search Hotels
 - Sorting of Hotels according to Price
@@ -64,7 +64,7 @@ Start the server
 
 ## Authors
 
--  Atir Khan
+- Atir Khan
 
 - Akash Gupta
 
@@ -80,7 +80,7 @@ Start the server
 ![image](https://drive.google.com/uc?export=view&id=1rMXPPAjk20bqgEOFdIpFbspYeC1OAtJV)
 
 
-## Login and Otp verification
+## Login and OTP verification
 
 ![image](https://drive.google.com/uc?export=view&id=1rGoQBin8NQ0AVW-u0jLmqekKZXSZ4YI6)
 
@@ -118,6 +118,6 @@ Start the server
 
 ![image](https://drive.google.com/uc?export=view&id=1Ek5uuromp3QiE0rfxHeFzkINpXze4Oz9)
 
-- GITHUB - https://github.com/atir09/purple-crook-1402
+- GitHub - https://github.com/atir09/purple-crook-1402
 - NETLIFY - https://take-a-trip-atir-clone.netlify.app/
 
